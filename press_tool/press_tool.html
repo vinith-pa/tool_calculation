@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculations</title>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <form
+      name="economicFactor"
+      action="./script.js"
+      method="post"
+      onsubmit="calculateEconomyFactor()"
+    >
+      <fieldset>
+        <legend>Economic Factor</legend>
+        <p>
+          <label for="area">Area in mm²:</label>
+          <input
+            type="text"
+            id="area"
+            name="area"
+            placeholder="in mm²"
+            onchange="calculateEconomyFactor()"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="noOfRows">Number of Rows:</label>
+          <input
+            type="text"
+            id="noOfRows"
+            name="noOfRows"
+            onchange="calculateEconomyFactor()"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="stripWidth">Width of the Strip in mm:</label>
+          <input
+            type="text"
+            id="stripWidth"
+            name="stripWidth"
+            placeholder="in mm"
+            onchange="calculateEconomyFactor()"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="pitch">Pitch in mm:</label>
+          <input
+            type="text"
+            id="pitch"
+            name="pitch"
+            placeholder="in mm"
+            onchange="calculateEconomyFactor()"
+            required
+          />
+        </p>
+        <hr />
+        <p>The Economic Factor is: <span id="result"></span></p>
+      </fieldset>
+    </form>
+    <footer><p>&copy;Vinith Pachiappan 2022</p></footer>
+  </body>
+</html>
 
