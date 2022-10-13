@@ -10,6 +10,8 @@
   <body>
     <h1>Press Tool Calculations</h1>
     <a href="../../tool_calculation/index.html">Home</a>
+
+    <br /><br />
     <form
       name="economicFactor"
       action="./script.js"
@@ -21,7 +23,7 @@
         <p>
           <label for="area">Area in mm²:</label>
           <input
-            type="text"
+            type="number"
             id="area"
             name="area"
             placeholder="in mm²"
@@ -33,7 +35,7 @@
         <p>
           <label for="noOfRows">Number of Rows:</label>
           <input
-            type="text"
+            type="number"
             id="noOfRows"
             name="noOfRows"
             onchange="calculateEconomyFactor()"
@@ -44,7 +46,7 @@
         <p>
           <label for="stripWidth">Width of the Strip in mm:</label>
           <input
-            type="text"
+            type="number"
             id="stripWidth"
             name="stripWidth"
             placeholder="in mm"
@@ -56,7 +58,7 @@
         <p>
           <label for="pitch">Pitch in mm:</label>
           <input
-            type="text"
+            type="number"
             id="pitch"
             name="pitch"
             placeholder="in mm"
