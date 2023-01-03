@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycle Time - Injection Molding</title>
+  </head>
+  <body>
+    <h1>Cycle Time - Injection Molding</h1>
+    <a href="../index.html">Home</a>
+    <a href="./injection_molding.html">Back</a>
+
+    <br /><br />
+    <form name="cycleTime" action="" onsubmit="calcCycleTime()">
+      <fieldset>
+        <legend>Cycle Time</legend>
+        <p>
+          <label for="moldClosing">Mold Closing Time in sec</label>
+          <input
+            type="number"
+            id="moldClosing"
+            name="moldClosing"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="injectionFill">Injection Fill Time in sec</label>
+          <input
+            type="number"
+            id="injectionFill"
+            name="injectionFill"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="injectionPack">Injection Pack Time in sec</label>
+          <input
+            type="number"
+            id="injectionPack"
+            name="injectionPack"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="injectionHold">Injection Hold Time in sec</label>
+          <input
+            type="number"
+            id="injectionHold"
+            name="injectionHold"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="moldOpenDelay">Mold Open Delay Time in sec</label>
+          <input
+            type="number"
+            id="moldOpenDelay"
+            name="moldOpenDelay"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="plasticisation">Plasticisation Time in sec</label>
+          <input
+            type="number"
+            id="plasticisation"
+            name="plasticisation"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="suckBack">Suck Back Time in sec</label>
+          <input
+            type="number"
+            id="suckBack"
+            name="suckBack"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="moldOpening">Mold Opening Time in sec</label>
+          <input
+            type="number"
+            id="moldOpening"
+            name="moldOpening"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="ejection">Ejection Time in sec</label>
+          <input
+            type="number"
+            id="ejection"
+            name="ejection"
+            placeholder="in sec"
+            min="0"
+            step="0.1"
+            required
+          />
+        </p>
+
+        <input type="submit" />
+      </fieldset>
+    </form>
+
+    <script>
+      function calcCycleTime() {
+        console.log("Hello");
+      }
+    </script>
+  </body>
+</html>
